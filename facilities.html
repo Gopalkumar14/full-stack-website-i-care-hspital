@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facilities | iCare Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: #023e8a;
+      border-radius: 5px;
+    }
+
+    /* Section */
+    .section {
+      margin: 100px auto;
+      max-width: 1200px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #0077b6;
+      border-bottom: 3px solid #0077b6;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    /* Facilities Grid */
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .facility-card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .facility-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .facility-card span {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 15px;
+      color: #0077b6;
+    }
+
+    .facility-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #023e8a;
+    }
+
+    .facility-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Hidden detail */
+    .facility-detail {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #f0f9ff;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: left;
+      color: #333;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="speciality.html">Speciality</a>
+  <a href="patient.html">Patient Data</a>
+  <a href="blog.html">Blog</a>
+  <a href="appointment.html">Appointment</a>
+  <a href="facilities.html">Facilities</a>
+</div>
+
+  <div class="section">
+    <h2>Our Hospital Facilities</h2>
+    <div class="facilities-grid">
+      
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🛌</span>
+        <h3>24×7 ICU & Emergency</h3>
+        <p>Advanced life support and critical care available round the clock.</p>
+        <div class="facility-detail">
+          Our ICU is equipped with ventilators, cardiac monitors, and life-saving technology. A team of expert intensivists and nurses is available 24×7 for emergencies.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>💊</span>
+        <h3>Fully Equipped Pharmacy</h3>
+        <p>In-house pharmacy to provide prescribed medicines anytime.</p>
+        <div class="facility-detail">
+          Our pharmacy stocks 1000+ medicines, surgical items, and life-saving drugs. Open 24×7 for patients and attendants.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🧪</span>
+        <h3>Pathology & Lab</h3>
+        <p>Modern lab with accurate test results for quick diagnosis.</p>
+        <div class="facility-detail">
+          From blood tests to advanced diagnostics like MRI, CT, and Ultrasound – all tests are conducted by certified lab professionals.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🚑</span>
+        <h3>24/7 Ambulance</h3>
+        <p>Emergency ambulance with fast response team available 24/7.</p>
+        <div class="facility-detail">
+          Our fleet of ambulances is equipped with oxygen, ventilators, and trained paramedics for safe patient transport.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>👨‍⚕️</span>
+        <h3>Expert Doctors</h3>
+        <p>Highly experienced specialists and surgeons in all fields.</p>
+        <div class="facility-detail">
+          Our team includes cardiologists, ophthalmologists, orthopedic surgeons, pediatricians, and optometry specialists led by Dr. Sunil Kumar.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🏥</span>
+        <h3>Operation Theatres</h3>
+        <p>Equipped with latest surgical instruments & modern technology.</p>
+        <div class="facility-detail">
+          Modular operation theatres with laminar airflow, advanced anesthesia machines, and minimal invasive surgery tools ensure safe surgeries.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🥗</span>
+        <h3>Cafeteria</h3>
+        <p>Nutritious  it is a monofobiya
+          .</p>
+        <div class="facility-detail">
+          Our cafeteria serves hygienic, balanced meals and snacks prepared under strict quality control.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>🧹</span>
+        <h3>Hygienic Environment</h3>
+        <p>Clean, sanitized hospital environment for patient safety.</p>
+        <div class="facility-detail">
+          24×7 housekeeping ensures sanitized wards, OTs, and waiting areas for infection-free healthcare.
+        </div>
+      </div>
+
+      <div class="facility-card" onclick="toggleDetail(this)">
+        <span>💻</span>
+        <h3>Digital Appointments</h3>
+        <p>Easy online booking system and digital patient records.</p>
+        <div class="facility-detail">
+          Patients can book consultations online, access medical reports, and receive reminders through our secure digital platform.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+  function toggleDetail(card) {
+    const detail = card.querySelector(".facility-detail");
+    const isVisible = detail.style.display === "block";
+    
+    // Hide all other details
+    document.querySelectorAll(".facility-detail").forEach(d => d.style.display = "none");
+    
+    // Toggle selected
+    detail.style.display = isVisible ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>

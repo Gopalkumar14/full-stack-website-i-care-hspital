@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Specialities | iCare Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: #023e8a;
+      border-radius: 5px;
+    }
+
+    /* Section */
+    .specialities {
+      margin: 100px auto;
+      max-width: 1100px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .specialities h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #0077b6;
+      border-bottom: 3px solid #0077b6;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    /* Grid */
+    .speciality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Card */
+    .speciality-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .speciality-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .speciality-card h3 {
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    .speciality-card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Icon */
+    .speciality-icon {
+      font-size: 40px;
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="speciality.html">Speciality</a>
+  <a href="patient.html">Patient Data</a>
+  <a href="blog.html">Blog</a>
+  <a href="appointment.html">Appointment</a>
+  <a href="facilities.html">Facilities</a>
+</div>
+
+  <div class="specialities">
+    <h2>Our Specialities</h2>
+    <div class="speciality-grid">
+
+      <div class="speciality-card">
+        <div class="speciality-icon">🚑</div>
+        <h3>Emergency & Trauma Care</h3>
+        <p>24-hour emergency department with advanced trauma care, rapid response teams, and life-saving equipment.</p>
+      </div>
+
+      <div class="speciality-card">
+        <div class="speciality-icon">👁️</div>
+        <h3>Eye Care & Cataract Surgery</h3>
+        <p>Expert eye specialists providing cataract surgeries, glaucoma treatment, and emergency eye trauma care.</p>
+      </div>
+
+      <div class="speciality-card">
+        <div class="speciality-icon">🩻</div>
+        <h3>Diagnostic Imaging</h3>
+        <p>State-of-the-art X-ray, CT scan, MRI, and ultrasound facilities for fast and accurate diagnosis.</p>
+      </div>
+
+      <div class="speciality-card">
+        <div class="speciality-icon">👶</div>
+        <h3>Pediatric & Neonatal ICU</h3>
+        <p>Dedicated Neonatal Intensive Care Unit (NICU) and Pediatric ICU (PICU) with highly skilled pediatricians.</p>
+      </div>
+
+      <div class="speciality-card">
+        <div class="speciality-icon">🧠</div>
+        <h3>Neurology & Orthopedics</h3>
+        <p>Advanced care for neurological disorders and orthopedic surgeries with modern rehabilitation support.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

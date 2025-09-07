@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment | iCare Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="speciality.html">Speciality</a>
+  <a href="patient.html">Patient Data</a>
+  <a href="blog.html">Blog</a>
+  <a href="appointment.html">Appointment</a>
+  <a href="facilities.html">Facilities</a>
+</div>
+
+      <Div class="apo"> <h2>👋👍 Appointment</h2>         
+
+<div class="card">
+  <form action="/databacseconnectivityapointment.php"  method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name:</label>
+      <input type="text" class="form-control" id="name" name="nam">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address:</label>
+      <input type="email" class="form-control" id="email" name="mail">
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="tel" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Preferred Date:</label>
+      <input type="date" class="form-control" id="date" name="dat">
+    </div>
+    <div class="mb-3">
+      <label for="department" class="form-label">Department:</label>
+      <select class="form-select" id="department" name="dep">
+        <option value="">Select Department</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Dermatology">Dermatology</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Additional Message: (Optional)</label>
+      <textarea class="form-control" id="message" name="mass"></textarea>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary" name="sb">Book Appointment</button>
+    </div>
+  </form>
+  </Div> 
+</div>
+
+</body>
+</html>

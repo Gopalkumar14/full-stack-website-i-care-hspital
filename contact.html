@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | iCare Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: #023e8a;
+      border-radius: 5px;
+    }
+
+    /* Page Header */
+    .header {
+      margin-top: 90px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .header h1 {
+      font-size: 36px;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Contact Container */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .contact-info h2 {
+      margin-bottom: 20px;
+      color: #0077b6;
+      font-size: 24px;
+    }
+    .contact-info p {
+      font-size: 16px;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-info i {
+      color: #0077b6;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #0077b6;
+      font-size: 24px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .form-group textarea {
+      resize: none;
+      height: 120px;
+    }
+    .btn {
+      display: inline-block;
+      background: #0077b6;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #023e8a;
+    }
+
+    /* Doctor Info */
+    .doctor-card {
+      margin: 40px auto;
+      max-width: 800px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .doctor-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077b6;
+    }
+    .doctor-details h3 {
+      margin: 0;
+      color: #0077b6;
+    }
+    .doctor-details p {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #444;
+    }
+
+    /* Map */
+    .map {
+      margin: 40px auto;
+      max-width: 1100px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+      .doctor-card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="speciality.html">Speciality</a>
+    <a href="patient.html">Patient Data</a>
+    <a href="blog.html">Blog</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="facilities.html">Facilities</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Contact iCare Hospital</h1>
+    <p>We’re here to assist you with any queries or appointments.</p>
+  </div>
+
+  <!-- Contact Container -->
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>📞 Get in Touch</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Moradabad (U.P), India</p>
+      <p><i class="fas fa-phone-alt"></i> +91 9012223597</p>
+      <p><i class="fas fa-envelope"></i> info@icarehospital.com</p>
+      <p><i class="fas fa-clock"></i> Mon – Sat, 10:00 AM – 6:00 PM</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>✉️ Send Us a Message</h2>
+      <form action="massage.php" method="post">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" name="massage" required></textarea>
+        </div>
+        <button class="btn" name="submit" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Doctor Info -->
+  <div class="doctor-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Doctor">
+    <div class="doctor-details">
+      <h3>👨‍⚕️ Dr. Sunil Kumar</h3>
+      <p><strong>Specialization:</strong> Eye Care, Vision Testing, Contact Lens & Spectacles</p>
+      <p><strong>Experience:</strong> 12+ Years in Clinical Optometry</p>
+      <p><strong>Available:</strong> Mon – Sat, 10:00 AM – 6:00 PM</p>
+    </div>
+  </div>
+  <div style="max-width:600px; margin:50px auto; padding:30px; background:#fff; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.1); font-family:'Poppins',sans-serif; text-align:center;">
+  
+  <h2 style="color:#0077b6; margin-bottom:10px;">💳 Secure Payment</h2>
+  <p style="color:#555; margin-bottom:20px;">Pay safely using UPI. You can scan the QR or pay directly via UPI apps.</p>
+
+  <!-- QR Code -->
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=9719007164-5@ybl&pn=ICareHospital&am=500&cu=INR&size=220x220" 
+       alt="UPI QR Code" 
+       style="margin:20px auto; display:block; border:6px solid #0077b6; border-radius:12px;">
+
+  <p style="font-size:15px; color:#444; margin:15px 0;">
+    <strong>UPI ID:</strong> <span style="color:#0077b6;">9719007164-5@ybl</span>
+  </p>
+
+  <!-- Fixed Payment Buttons -->
+  <div style="margin:20px 0;">
+    <a href="upi://pay?pa=9719007164-5@ybl&pn=ICareHospital&am=500&cu=INR" 
+       style="padding:12px 20px; margin:5px; background:#0077b6; color:white; text-decoration:none; border-radius:6px; font-size:16px;">
+       Pay ₹500
+    </a>
+    <a href="upi://pay?pa=9719007164-5@ybl&pn=ICareHospital&am=1000&cu=INR" 
+       style="padding:12px 20px; margin:5px; background:#023e8a; color:white; text-decoration:none; border-radius:6px; font-size:16px;">
+       Pay ₹1000
+    </a>
+  </div>
+
+  <!-- Custom Amount -->
+  <form onsubmit="generateUPILink(event)" style="margin-top:20px;">
+    <input type="number" id="amount" placeholder="Enter Amount (₹)" required 
+           style="padding:10px; width:70%; border:1px solid #ccc; border-radius:8px; font-size:15px;">
+    <button type="submit" 
+            style="padding:10px 20px; margin-top:10px; background:#009688; color:white; border:none; border-radius:8px; cursor:pointer; font-size:15px;">
+      Pay Custom Amount
+    </button>
+  </form>
+</div>
+
+<script>
+function generateUPILink(e){
+  e.preventDefault();
+  let amount = document.getElementById("amount").value;
+  if(amount && amount > 0){
+    let upiLink = `upi://pay?pa=9719007164-5@ybl&pn=ICareHospital&am=${amount}&cu=INR`;
+    window.location.href = upiLink; // redirect to UPI app
+  } else {
+    alert("⚠️ Please enter a valid amount!");
+  }
+}
+</script>
+
+  
+
+  <!-- Map -->
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.779022493991!2d78.7666!3d28.8386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b1b3f97d50c6f%3A0x8d63a4db3d3a1f19!2sMoradabad%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1693852294965" 
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+</body>
+</html>
